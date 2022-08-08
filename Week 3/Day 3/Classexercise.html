@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+        <style>
+            .banner{
+                border: 2px solid blue;
+                width: 55%;
+                height: 100px;
+                display: none;
+            }
+        </style>
+    <body>
+        <div class="banner">
+        <p>The sales ends in 10 seconds </p>
+
+        </div>
+    </body>   
+    <script>
+        let timeremaining = 60;
+
+        function displayBanner() {
+            timeremaining = timeremaining-1
+            let banner = document.getElementsByClassName("banner")[0]
+            banner.style.display = "block"
+            banner.firstElementChild.innerHTML= "The sales ends in " + timeremaining + " seconds"     
+        }
+        let time = setInterval(displayBanner,1000); 
+    </script>
+</html>

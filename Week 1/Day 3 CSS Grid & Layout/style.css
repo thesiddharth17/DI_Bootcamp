@@ -1,0 +1,35 @@
+div {
+border: 2px solid black;
+
+
+}
+
+div.container{
+border: 5px solid red;
+padding: 5px;
+height: 500px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+
+}
+
+div.container div{
+    background-color: aqua;
+
+
+}
+
+.class1{
+   height: 100px;
+   align-self: stretch;
+
+}
+
+.class2{
+   height: 200px;
+   width: 80%;
+   
+
+}
