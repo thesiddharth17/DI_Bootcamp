@@ -2,7 +2,7 @@ import psycopg2
 
 HOSTNAME = 'localhost'
 USERNAME = 'postgres'
-PASSWORD = 'Fifa21nolimits'
+PASSWORD = 
 DATABASE = 'dvdrental'
 
 connection = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
